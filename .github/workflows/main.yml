@@ -59,7 +59,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          script: |
+          args: |
             cd ~/app/gobarber-backend
             yarn
             ./node_modules/.bon/typeorm migration:run
