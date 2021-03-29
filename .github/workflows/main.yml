@@ -59,9 +59,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          script: |
-            cd ~/app/gobarber-backend
-            yarn
+          script: cd ~/app/gobarber-backend && yarn
             
       # Executar as migrations do TypeORM -> Atualizando o banco
       - name: Run migrations on Digital Ocean
