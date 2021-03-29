@@ -40,7 +40,7 @@ jobs:
       - name: Run build
         run: yarn build
         
-      # Copiar a pasta dist para dentro da Digital Ocean -> Em diretório temporário
+      # Copiar a pasta dist para dentro da Digital Ocean -> Em diretório temporário 
       - name: Copy dist to Digital Ocean
         uses: appleboy/scp-action@master
         with:
