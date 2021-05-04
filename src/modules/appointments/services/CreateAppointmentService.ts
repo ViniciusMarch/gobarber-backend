@@ -62,6 +62,7 @@ class CreateAppointmentService {
       date: appointmentDate,
     });
 
+    console.log(appointmentDate);
     const dateFormatted = format(appointmentDate, "dd/MM/yyyy 'às' HH:mm'h'");
 
     await this.notificationsRepository.create({
